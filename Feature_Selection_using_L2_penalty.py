@@ -17,6 +17,7 @@ num_feats=30
 X_norm = MinMaxScaler().fit_transform(X)
 from sklearn.feature_selection import SelectFromModel
 from sklearn.linear_model import LogisticRegression
+from sklearn.preprocessing import MinMaxScaler
 
 embeded_lr_selector = SelectFromModel(LogisticRegression(penalty="l2"), max_features=num_feats)
 embeded_lr_selector.fit(X_norm, y)from sklearn.feature_selection import SelectFromModel
