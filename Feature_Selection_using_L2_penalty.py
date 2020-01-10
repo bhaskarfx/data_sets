@@ -14,7 +14,7 @@ del X['Overall']
 
 feature_name = list(X.columns)
 num_feats=30
-
+X_norm = MinMaxScaler().fit_transform(X)
 from sklearn.feature_selection import SelectFromModel
 from sklearn.linear_model import LogisticRegression
 
