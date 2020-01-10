@@ -5,7 +5,8 @@ from collections import Counter
 import math 
 from scipy import stats
 
-traindf = pd.read_csv("Fianl_FIFA_data.csv")
+url="https://raw.githubusercontent.com/bhaskarfx/data_sets/master/FIFA19_player.csv"
+player_df = pd.read_csv(url, error_bad_lines=False, warn_bad_lines=False)
 
 y = traindf['Overall']>=87
 X = traindf.copy()
