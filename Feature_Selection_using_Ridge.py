@@ -7,7 +7,7 @@ import math
 from scipy import stats
 
 url="https://raw.githubusercontent.com/bhaskarfx/data_sets/master/Final_FIFA_data.csv"
-player_df = pd.read_csv(url, error_bad_lines=False, warn_bad_lines=False)
+traindf = pd.read_csv(url, error_bad_lines=False, warn_bad_lines=False)
 
 y = traindf['Overall']>=87
 X = traindf.copy()
