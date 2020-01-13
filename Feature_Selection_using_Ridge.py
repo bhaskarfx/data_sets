@@ -5,7 +5,7 @@ import scipy.stats as ss
 from collections import Counter
 import math 
 from scipy import stats
-
+from sklearn.feature_selection import SelectFromModel
 url="https://raw.githubusercontent.com/bhaskarfx/data_sets/master/Final_FIFA_data.csv"
 traindf = pd.read_csv(url, error_bad_lines=False, warn_bad_lines=False)
 
